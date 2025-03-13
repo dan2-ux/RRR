@@ -18,7 +18,7 @@ export default function Home(){
         sEx([])
         sLoading(true)
         axios
-            .get("http://192.168.1.54:1000/data/")
+            .get("https://4789-1-55-81-237.ngrok-free.app/data/")
             .then((res) => {
                 {res.data.map((e,i) => {
                     const getTime = new Date(`${e.endDate} ${e.endTime}`)
@@ -39,7 +39,7 @@ export default function Home(){
         sLoading(true);
         const _id = kkk ? re[id]?._id : ex[id]?._id
         axios
-            .delete(`http://192.168.1.54:1000/data/${_id}`)
+            .delete(`https://4789-1-55-81-237.ngrok-free.app/data/${_id}`)
             .then(() => {
                 sLoading(false);
                 navigate(0)
@@ -184,7 +184,7 @@ function ScheduleItem({value, sRe, sEx, re, ex}){
             sRe([])
             sEx([])
             axios
-            .get("http://192.168.1.54:1000/data/")
+            .get("https://4789-1-55-81-237.ngrok-free.app/data/")
             .then((res) => {
                 {res.data.map((e,i) => {
                     const getTime = new Date(`${e.endDate} ${e.endTime}`)
