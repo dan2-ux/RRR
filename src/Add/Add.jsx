@@ -40,7 +40,7 @@ export default function Add(){
             endDate: dis[2].data
         }
         axios
-            .post("http://192.168.1.54:1000/data/", newData)
+            .post("https://4789-1-55-81-237.ngrok-free.app/data/", newData)
             .then(() => {
                 sLoading(false);
                 navigate('/')
