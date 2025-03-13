@@ -40,7 +40,7 @@ export default function Add(){
             endDate: dis[2].data
         }
         axios
-            .post("http://localhost:1000/data/", newData)
+            .post("http://192.168.1.54:1000/data/", newData)
             .then(() => {
                 sLoading(false);
                 navigate('/')
